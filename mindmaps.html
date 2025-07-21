@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mindmap | Subjects</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Mindmaps | All Subjects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefae0;
       color: #333;
     }
 
     header, footer {
-      padding: 20px 40px;
-      background-color: #355C7D;
-      color: #fff;
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #3d405b, #81b29a);
+      color: white;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    .mindmap-container {
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .container {
       max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
@@ -28,20 +34,23 @@
 
     .toggle-btn {
       width: 100%;
-      background: linear-gradient(135deg, #7f5af0, #2cb67d);
-      color: #fff5Ee;
+      background: linear-gradient(135deg, #457b9d, #a8dadc);
+      color: white;
       border: none;
       padding: 16px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       border-radius: 12px;
       cursor: pointer;
-      margin: 16px 0;
-      transition: background 0.3s ease;
+      margin: 20px 0;
+      box-shadow: 0 0 12px rgba(69, 123, 157, 0.6);
+      transition: 0.3s ease-in-out;
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     }
 
     .toggle-btn:hover {
-      background: linear-gradient(135deg, #693fd3, #249865);
+      transform: scale(1.05);
+      box-shadow: 0 0 24px rgba(69, 123, 157, 1);
     }
 
     .subject-content {
@@ -51,18 +60,19 @@
     }
 
     .category-block {
-      background: #D0F0C0;
-      border-left: 6px solid #2cb67d;
-      padding: 16px 24px;
+      background: #f0efeb;
+      border-left: 6px solid #3d405b;
+      padding: 20px 24px;
       margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
 
     .category-title {
       font-weight: 600;
       margin-bottom: 10px;
-      color: #444;
+      font-size: 18px;
+      color: #3d405b;
     }
 
     ul.chapter-list {
@@ -72,13 +82,13 @@
     }
 
     .chapter-list a {
-      color: #2d7ff9;
+      color: #3d405b;
       text-decoration: none;
       transition: color 0.2s ease;
     }
 
     .chapter-list a:hover {
-      color: #1c56d3;
+      color: #2f3a53;
       text-decoration: underline;
     }
 
@@ -90,128 +100,61 @@
     .back-home-btn {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #2cb67d;
+      padding: 12px 24px;
+      background-color: #81b29a;
       color: white;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #81b29a;
     }
 
     .back-home-btn:hover {
-      background-color: #249865;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #81b29a;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mindmap - Subjects Overview</h1>
+    <h1>MINDMAPS</h1>
   </header>
 
-  <div class="mindmap-container">
-
-    <!-- SST -->
+  <div class="container">
     <button class="toggle-btn" onclick="toggleContent('sst')">SST</button>
     <div class="subject-content" id="sst">
       <div class="category-block">
         <div class="category-title">Geography</div>
         <ul class="chapter-list">
-          <li><a href="https://drive.google.com/file/d/1th5z2UswDuWQd75lGr4LS_P_y0L5VRYI/preview">Resources and Development</a></li>
-          
-          <li><a href="https://drive.google.com/file/d/1DjzBCEGJOw9FbJsTC7wtBhTzIVbjQUz6/preview">Forest and Wildlife Resources</a></li>
-<li><a href="https://drive.google.com/file/d/1IcDDRnyHxWD8dVixCZyn0J4Rc9Eq0O7D/preview">Water Resources</a></li>
-<li><a href="https://drive.google.com/file/d/1kr_1P0yjLmlV4Rnr0DcO3yKw6lAMtkk_/preview">Agriculture</a></li>       
-<li><a href="https://drive.google.com/file/d/1Z3idebWBQOqq5qyVhuctjpPaNbJ5IcKw/preview">Manufacturing Industries</a></li>  
-<li><a href="https://drive.google.com/file/d/1vOC1XUc7z0mXb8YK8Q1Hrdz_bfccnnje/preview">Lifelines of National Economy</a></li>
-</ul>
-      </div>
-      <div class="category-block">
-        <div class="category-title">Civics</div>
-        <ul class="chapter-list">
-          <li><a href="https://drive.google.com/your-link-4" target="_blank">Power Sharing</a></li>
-          <li><a href="https://drive.google.com/your-link-5" target="_blank">Federalism</a></li>
-        </ul>
-      </div>
-      <div class="category-block">
-        <div class="category-title">History</div>
-        <ul class="chapter-list">
-          <li><a href="https://drive.google.com/your-link-6" target="_blank">Nationalism in India</a></li>
-          <li><a href="https://drive.google.com/your-link-7" target="_blank">Age of Industrialization</a></li>
-        </ul>
-      </div>
-      <div class="category-block">
-        <div class="category-title">Economics</div>
-        <ul class="chapter-list">
-          <li><a href="https://drive.google.com/your-link-8" target="_blank">Development</a></li>
-          <li><a href="https://drive.google.com/your-link-9" target="_blank">Money and Credit</a></li>
+          <li><a href="https://drive.google.com/file/d/...">Resources and Development</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- Science -->
     <button class="toggle-btn" onclick="toggleContent('science')">Science</button>
     <div class="subject-content" id="science">
       <div class="category-block">
         <div class="category-title">Physics</div>
         <ul class="chapter-list">
-          <li><a href="https://drive.google.com/file/d/1MAZn6r3QJGGSZNZ66pxdsSN-MWQPTL1c/preview">Light-Reflection and Refraction</a></li>
-          <li><a href="https://drive.google.com/file/d/1SMFRBiPuTN1O4u1z1_6yQ1DchmjKeXS0/preview">Human Eye and Colorful World</a></li>
-       <li><a href="https://drive.google.com/file/d/1rhQOEgGe3ckQrRNjvX0qnRNHnEyjggSl/preview">Electricity</a></li>
- <li><a href="https://drive.google.com/file/d/1Gfz60rfssuaEBUKNvKJsxfFeQimUrCyF/preview">Magnetic Effects of Electric Current</a></li>
-</ul>
-      </div>
-      <div class="category-block">
-        <div class="category-title">Chemistry</div>
-        <ul class="chapter-list">
-          <li><a href="https://drive.google.com/file/d/1Q_2rL8RtBdeydaFIJZPG0aYFV75yWDno/preview">Chemical Reactions and Equations</a></li>
-          <li><a href="https://drive.google.com/file/d/13AR616bAoTQRWgOA2BukMIyr-YmvD0uH/preview">Acids and Bases</a></li>
-<li><a href="https://drive.google.com/file/d/11Q3k4Lxbsjx9ahOFk4pKg7zeie6mCgDD/preview">Metals and Non-metals</a></li>       
-<li><a href="https://drive.google.com/file/d/1347QHJQhXrw9X0B5TQ7g31EjVLQ5708t/preview">Carbon and its Compounds</a></li>  
-
-</ul>
-      </div>
-      <div class="category-block">
-        <div class="category-title">Biology</div>
-        <ul class="chapter-list">
-          <li><a href="https://drive.google.com/file/d/1tEeh-555doidNXK4zB5GLht2jX2JMQ5D/preview">Life Processes</a></li>
-          <li><a href="https://drive.google.com/file/d/15ogEWlAi5rboxcUAYHPXPV2S1j2Rc0SA/preview">Control and Coordination</a></li>
-<li><a href="https://drive.google.com/file/d/1qA8fnmMq7wWAe77_PDqvkVjP7HpOrk_M/preview">How Do Organisms Reproduce?</a></li>        
-<li><a href="https://drive.google.com/file/d/1utpGARl3zoo4ymAAkd58iYjQ87SBOr2s/preview">Heredity</a></li> 
-<li><a href="https://drive.google.com/file/d/1maZDvihZRrotNZ3M1V6iwQ0YsxoNCr5U/preview">Our Environment</a></li>
-</ul>
+          <li><a href="https://drive.google.com/file/d/...">Light – Reflection and Refraction</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- Maths -->
     <button class="toggle-btn" onclick="toggleContent('maths')">Maths</button>
     <div class="subject-content" id="maths">
       <div class="category-block">
-        <div class="category-title">All Chapters</div>
+        <div class="category-title">Chapters</div>
         <ul class="chapter-list">
-          <li><a href="https://drive.google.com/file/d/1xH02HAV6gKWcYqeCojDYPnFV4jzP40dF/preview">Real Numbers</a></li>
-          <li><a href="https://drive.google.com/file/d/13zuYiakBLVFDY2p4kNvVeTz4WBS789O8/preview
-">Polynomials</a></li>
-          <li><a href="https://drive.google.com/file/d/1jzWaUVn3V0dJnSPArezdtPopt2e8pmxS/preview">Pair of Linear Equations in Two Variables</a></li>
-          <li><a href="https://drive.google.com/file/d/16xih4EGHf9s5UNN1u_CbvRO3kRWRC9K3/preview
-">Quadratic Equations</a></li>
-          <li><a href="https://drive.google.com/file/d/1oFUdQro7ncCrg5aeMxLaw0Vx6Xup_Zan/preview">Arithmetic Progressions</a></li>
-          <li><a href="https://drive.google.com/file/d/12Rn864qFX1DHpgXfJxWotHBQ6Af3MVTT/preview">Triangles</a></li>
-<li><a href="https://drive.google.com/file/d/1hKD9ivV3j_WKfx8zkljeLS8V3VJ1gBwZ/preview">Coordinate Geometry</a></li>
-<li><a href="https://drive.google.com/file/d/1eSRYXYPDT-jlG0Vz0nmBylTz7nWUMzgY/preview">Introduction to Trigonometry</a></li>
-<li><a href="https://drive.google.com/file/d/1kJVYSmC44EkH8TGXYC1iSsuNYPXFQkii/preview">Applications of Trigonometry</a></li>
-<li><a href="https://drive.google.com/file/d/1ZdXD64l_fH3UsX1h57-v7LP5EgMi5b0d/preview">Circles</a></li>
-<li><a href="https://drive.google.com/file/d/1O8BfiqIogkkVEFmHwbjG_qnH50FyJ4P0/preview">Areas Related to Circles</a></li>
-<li><a href="https://drive.google.com/file/d/1eKRL1PiOwmnPugZGHRYAlw23eRr48vXj/preview">Surface Areas and Volumes</a></li>
-<li><a href="https://drive.google.com/file/d/1y9pyX9FjQKdK0WxxjDKvTCpx2Ow3M0qZ/preview">Statistics</a></li>       
-<li><a href="https://drive.google.com/file/d/1OVj8fCQjhUryyBYVRH9XCKAYvhER2yLB/preview">Probability</a></li>  
-</ul>
+          <li><a href="https://drive.google.com/file/d/...">Real Numbers</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>&copy; 2025 My Website</p>
+    <p>&copy; 2025 SSSVM <br><span style="font-size: 0.8em;">~Priyanshu Singh</span></p>
     <a href="index.html" class="back-home-btn">⬅ Back to Home</a>
   </footer>
 
