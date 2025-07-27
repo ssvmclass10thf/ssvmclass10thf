@@ -307,6 +307,35 @@
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
   }
+    .glow-download-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #002f6c, #00509e);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+   box-shadow: 0 0 20px rgba(0, 80, 158, 0.6);
+  transition: 0.3s ease-in-out;
+  animation: glowPulse 1.5s infinite alternate;
+}
+
+.glow-download-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px #00509e, 0 0 60px #002f6c;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px #00509e, 0 0 20px #00509e;
+  }
+  100% {
+    box-shadow: 0 0 25px #002f6c, 0 0 50px #002f6c;
+  }
+}
+
   </style>  </head>  <body>  
   
   <div id="sideNav" class="side-nav">  
@@ -414,6 +443,11 @@
 
 
 <br>  
+    <!-- Glowing Download App Button -->
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://ai2.appinventor.mit.edu/b/5fnaq" target="_blank" class="glow-download-btn">📱 Download Our New App</a>
+</div>
+<br>
 <footer>  
   <a href="#top" class="scroll-top">🚀 Fly to Top</a>  
   <p>© 2025 SSSVM CLASS 10th F | 🙏 Made with Faith & Love</p>  
