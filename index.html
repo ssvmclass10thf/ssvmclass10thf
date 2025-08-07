@@ -62,12 +62,30 @@
       text-align: center;  
     }  
   
-    .button-wrapper {  
-      max-width: 900px;  
-      margin: 0 auto;  
-      padding: 0 15px;  
-      box-sizing: border-box;  
-    }  
+    .button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.btn {
+  flex: 1 1 calc(50% - 28px); /* 2 buttons per row (on mobile) */
+  max-width: 200px;
+  text-align: center;
+}
+
+/* For large screens (like desktop), spread buttons across wider area */
+@media (min-width: 768px) {
+  .btn {
+    flex: 1 1 calc(25% - 28px); /* 4 buttons per row */
+    max-width: 240px;
+  }
+      }
   
     .button-row {  
       display: flex;  
