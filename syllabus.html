@@ -62,6 +62,35 @@
       color: #00796b;
     }
 
+    /* ====== Stylish Table ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    th, td {
+      border: 1px solid #80cbc4;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: linear-gradient(90deg, #26c6da, #80cbc4);
+      color: #004d40;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1fafa;
+    }
+
+    tr:hover {
+      background-color: #b2dfdb;
+      transition: background 0.3s ease;
+    }
+
     .back-btn {
       display: inline-block;
       margin: 40px auto 30px auto;
@@ -86,17 +115,18 @@
       text-align: center;
     }
   </style>
+  
 </head>
 <body>
 
   <div class="header">
-    📘 SYLLABUS
+    📝 2nd PERIODIC TEST
   </div>
 
   <div class="container">
 
     <div class="section">
-      <h2>📝 PT-2 Syllabus</h2>
+      <h2>📝 PT-2 SYLLABUS</h2>
       <ul>
         <li><strong>Maths:</strong> Chapter 4 to Chapter 6 (Exe 6.2)</li>
         <li><strong>Science:</strong> Che.- Chapter 2. <br> Phy.- Chapter 2. <br> Bio.- From topic RESPIRATION To EXCRETION.</li>
@@ -105,10 +135,45 @@
         <li><strong>Hindi:</strong> राम-लक्ष्मण-परशुराम संवाद, आत्मकथ्य (पद्य)। <br>
 बालगोबिन भगत, लखनवी अंदाज (गद्य)।<br>
 माता का आंचल (कृतिका)।<br>
-व्याकरण - वाक्य, पद-परिचय।</li>
+व्याकरण - वाक्य, पद-परिचय।</li>
         <li><strong>Computer:</strong>Unit (ii) and unit (iii)</li>
+        <li><strong>Physical Education:</strong> Chapter 1, 2 and 3.</li>
       </ul>
     </div>
+
+    <!-- ===== Table Section ===== -->
+    <div class="section">
+      <h2>📊 PT-2 TIME-TABLE</h2>
+      <table>
+            <tr>
+          <th>DATE</th>
+          <th>MEETING</th>
+          <th>SUBJECT</th>
+        </tr>
+      
+        <tr><td>25/08/2025</td><td>2nd</td><td>Maths</td></tr>
+        <tr><td>25/08/2025</td><td>2nd</td><td>Moral</td></tr>
+        <tr><td>26/08/2025</td><td>2nd</td><td>Sst</td></tr>
+        <tr><td>26/08/2025</td><td>2nd</td><td>P.E.</td></tr>
+        <tr><td>27/08/2025</td><td>2nd</td><td>Science</td></tr>
+        <tr><td>27/08/2025</td><td>2nd</td><td>Hindi</td></tr>
+        <tr><td>28/08/2025</td><td>2nd</td><td>English</td></tr>
+        <tr><td>28/08/2025</td><td>2nd</td><td>Computer</td></tr>
+      </table>
+    </div>
+    <!-- ===== Extra Table Section ===== -->
+<div class="section">
+  <h2>🪑 SITTING PLAN</h2>
+  <table>
+    <tr><th>ROOM No.</th><th>ROLL No.</th></tr>
+    <tr><td>302</td><td>1 to 14</td></tr>
+    <tr><td>N2</td><td>15 to 28</td></tr>
+    <tr><td>N3</td><td>29 to 42</td></tr>
+    <tr><td>N4</td><td>43 to 56</td></tr>
+    <tr><td>N6</td><td>57 to 65</td></tr>
+   
+  </table>
+</div>
 
     <div class="btn-wrapper">
       <a class="back-btn" href="index.html">← Back to Home</a>
@@ -117,4 +182,4 @@
   </div>
 
 </body>
-</html>
+  </html>
